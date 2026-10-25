@@ -8,12 +8,15 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import com.example.demo.entities.Chambre;
 import com.example.demo.service.IChambreService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 public class ChambreRestController {
 
+    @Autowired
     IChambreService chambreService;
 
     // http://localhost:8089/tpfoyer/chambre/retrieve-all-chambres
